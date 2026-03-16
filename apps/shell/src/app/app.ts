@@ -1,8 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
+import { LanguageSwitcherComponent } from '@our/i18n';
 
 @Component({
-  imports: [RouterModule],
+  imports: [RouterModule, TranslateModule, LanguageSwitcherComponent],
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.scss',

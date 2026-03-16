@@ -23,7 +23,8 @@
       "@our/ui": ["libs/ui/src/index.ts"],
       "@our/design-system": ["libs/design-system/src/index.scss"],
       "@our/design-system/abstracts": ["libs/design-system/src/lib/abstracts/_index.scss"],
-      "@our/testing": ["libs/testing/src/index.ts"]
+      "@our/testing": ["libs/testing/src/index.ts"],
+      "@our/i18n": ["libs/i18n/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

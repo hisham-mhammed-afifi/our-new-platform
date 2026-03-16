@@ -1,30 +1,27 @@
 <section class="hero">
-  <div class="hero__badge">Micro-frontends</div>
-  <h1 class="hero__title">Build faster with <span>Our Platform</span></h1>
-  <p class="hero__subtitle">
-    A modular architecture powered by Module Federation.
-    Each app is independently deployable and composable.
-  </p>
+  <div class="hero__badge">{{ 'home.badge' | translate }}</div>
+  <h1 class="hero__title">{{ 'home.title' | translate }} <span>{{ 'home.titleHighlight' | translate }}</span></h1>
+  <p class="hero__subtitle">{{ 'home.subtitle' | translate }}</p>
   <div class="hero__actions">
-    <lib-button routerLink="playground" variant="primary">Explore Playground</lib-button>
-    <lib-button routerLink="settings" variant="outline">Settings</lib-button>
+    <lib-button routerLink="playground" variant="primary">{{ 'home.explorePlayground' | translate }}</lib-button>
+    <lib-button routerLink="settings" variant="outline">{{ 'home.settings' | translate }}</lib-button>
   </div>
 </section>
 
 <section class="cards">
   <div class="card">
     <div class="card__icon">⚡</div>
-    <div class="card__title">Independent Deploys</div>
-    <p class="card__desc">Ship features without coordinating releases across teams.</p>
+    <div class="card__title">{{ 'home.card.deploys.title' | translate }}</div>
+    <p class="card__desc">{{ 'home.card.deploys.desc' | translate }}</p>
   </div>
   <div class="card">
     <div class="card__icon">🧩</div>
-    <div class="card__title">Composable Remotes</div>
-    <p class="card__desc">Lazy-load remote apps on demand with seamless integration.</p>
+    <div class="card__title">{{ 'home.card.remotes.title' | translate }}</div>
+    <p class="card__desc">{{ 'home.card.remotes.desc' | translate }}</p>
   </div>
   <div class="card">
     <div class="card__icon">🎨</div>
-    <div class="card__title">Design System</div>
-    <p class="card__desc">Consistent theming with dark &amp; light mode out of the box.</p>
+    <div class="card__title">{{ 'home.card.design.title' | translate }}</div>
+    <p class="card__desc">{{ 'home.card.design.desc' | translate }}</p>
   </div>
 </section>

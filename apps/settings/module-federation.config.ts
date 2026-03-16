@@ -5,6 +5,20 @@ const config: ModuleFederationConfig = {
   exposes: {
     './Routes': 'apps/settings/src/app/remote-entry/entry.routes.ts',
   },
+  shared: (libraryName, sharedConfig) => {
+    if (
+      libraryName === '@ngx-translate/core' ||
+      libraryName === '@ngx-translate/http-loader'
+    ) {
+      return {
+        ...sharedConfig,
+        singleton: true,
+        strictVersion: true,
+        requiredVersion: '17.0.0',
+      };
+    }
+    return sharedConfig;
+  },
 };
 
 /**

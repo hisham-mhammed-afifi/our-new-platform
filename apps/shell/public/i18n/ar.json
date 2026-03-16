@@ -1,0 +1,19 @@
+{
+  "nav.home": "الرئيسية",
+  "nav.settings": "الإعدادات",
+  "nav.playground": "ساحة التجربة",
+  "nav.auth": "المصادقة",
+  "nav.brand": "المنصة",
+  "home.badge": "واجهات مصغرة",
+  "home.title": "ابنِ أسرع مع",
+  "home.titleHighlight": "منصتنا",
+  "home.subtitle": "بنية معمارية مكونة من وحدات مدعومة بـ Module Federation. كل تطبيق قابل للنشر والتركيب بشكل مستقل.",
+  "home.explorePlayground": "استكشف ساحة التجربة",
+  "home.settings": "الإعدادات",
+  "home.card.deploys.title": "نشر مستقل",
+  "home.card.deploys.desc": "أطلق الميزات دون تنسيق الإصدارات بين الفرق.",
+  "home.card.remotes.title": "وحدات قابلة للتركيب",
+  "home.card.remotes.desc": "تحميل التطبيقات عند الطلب مع تكامل سلس.",
+  "home.card.design.title": "نظام التصميم",
+  "home.card.design.desc": "سمات متسقة مع الوضع الداكن والفاتح."
+}

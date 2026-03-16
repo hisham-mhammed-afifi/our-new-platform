@@ -1,0 +1,19 @@
+{
+  "nav.home": "Home",
+  "nav.settings": "Settings",
+  "nav.playground": "Playground",
+  "nav.auth": "Auth",
+  "nav.brand": "Platform",
+  "home.badge": "Micro-frontends",
+  "home.title": "Build faster with",
+  "home.titleHighlight": "Our Platform",
+  "home.subtitle": "A modular architecture powered by Module Federation. Each app is independently deployable and composable.",
+  "home.explorePlayground": "Explore Playground",
+  "home.settings": "Settings",
+  "home.card.deploys.title": "Independent Deploys",
+  "home.card.deploys.desc": "Ship features without coordinating releases across teams.",
+  "home.card.remotes.title": "Composable Remotes",
+  "home.card.remotes.desc": "Lazy-load remote apps on demand with seamless integration.",
+  "home.card.design.title": "Design System",
+  "home.card.design.desc": "Consistent theming with dark & light mode out of the box."
+}

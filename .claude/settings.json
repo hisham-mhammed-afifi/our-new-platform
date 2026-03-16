@@ -3,7 +3,13 @@
     "allow": [
       "Bash(grep -r \"Button\\\\|@our/ui\" /d/POCs/our-new-platform/apps --include=*.ts --include=*.tsx)",
       "Bash(grep -E \"\\\\.\\(ts|html|scss|css\\)$\")",
-      "Bash(find /d/POCs/our-new-platform -type f -name *.spec.ts)"
+      "Bash(find /d/POCs/our-new-platform -type f -name *.spec.ts)",
+      "Bash(npm install:*)",
+      "Bash(node -e \"const p = require\\(''./node_modules/@ngx-translate/core/package.json''\\); console.log\\(''core:'', p.version\\); const h = require\\(''./node_modules/@ngx-translate/http-loader/package.json''\\); console.log\\(''http-loader:'', h.version\\);\")",
+      "Bash(npx nx:*)",
+      "Bash(npx kill-port:*)",
+      "Bash(taskkill //F //IM node.exe)",
+      "Bash(netstat -ano)"
     ]
   }
 }
