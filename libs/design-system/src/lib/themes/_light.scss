@@ -1,0 +1,55 @@
+@use '../abstracts/variables' as *;
+
+:root,
+[data-theme='light'] {
+  // Primary
+  --ds-color-primary: #{$color-indigo-600};
+  --ds-color-primary-hover: #{$color-indigo-700};
+  --ds-color-primary-active: #{$color-indigo-800};
+  --ds-color-primary-text: #{$color-white};
+
+  // Secondary
+  --ds-color-secondary: #{$color-gray-200};
+  --ds-color-secondary-hover: #{$color-gray-300};
+  --ds-color-secondary-active: #{$color-gray-400};
+  --ds-color-secondary-text: #{$color-gray-900};
+
+  // Surfaces
+  --ds-color-background: #{$color-gray-50};
+  --ds-color-surface: #{$color-white};
+  --ds-color-surface-hover: #{$color-gray-50};
+  --ds-color-surface-raised: #{$color-white};
+
+  // Text
+  --ds-color-text: #{$color-gray-900};
+  --ds-color-text-secondary: #{$color-gray-600};
+  --ds-color-text-muted: #{$color-gray-500};
+  --ds-color-text-inverse: #{$color-white};
+
+  // Border
+  --ds-color-border: #{$color-gray-200};
+  --ds-color-border-strong: #{$color-gray-300};
+
+  // Focus
+  --ds-color-focus: #{$color-indigo-500};
+
+  // Outline variant
+  --ds-color-outline-bg: transparent;
+  --ds-color-outline-hover: #{$color-indigo-50};
+  --ds-color-outline-active: #{$color-indigo-100};
+  --ds-color-outline-text: #{$color-indigo-600};
+  --ds-color-outline-border: #{$color-indigo-600};
+
+  // Status
+  --ds-color-success: #{$color-green-600};
+  --ds-color-warning: #{$color-amber-600};
+  --ds-color-error: #{$color-red-600};
+
+  // Shadows
+  --ds-shadow-sm: #{$shadow-sm};
+  --ds-shadow-md: #{$shadow-md};
+  --ds-shadow-lg: #{$shadow-lg};
+
+  // Disabled
+  --ds-opacity-disabled: 0.5;
+}

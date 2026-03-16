@@ -1,12 +1,6 @@
-import { Component } from '@angular/core';
 import { Route } from '@angular/router';
 import { loadRemote } from '@module-federation/enhanced/runtime';
-
-@Component({
-  selector: 'app-home',
-  template: `<p>Home works!</p>`,
-})
-export class HomeComponent {}
+import { HomeComponent } from './components/home/home';
 
 export const appRoutes: Route[] = [
   {

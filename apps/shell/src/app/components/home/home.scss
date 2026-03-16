@@ -1,0 +1,93 @@
+:host {
+  display: block;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 1rem 4rem;
+  gap: 1.5rem;
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.75rem;
+  font-size: var(--ds-font-size-xs);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ds-color-primary);
+  background-color: color-mix(in srgb, var(--ds-color-primary) 10%, transparent);
+  border-radius: 9999px;
+}
+
+.hero__title {
+  font-size: var(--ds-font-size-4xl);
+  font-weight: 700;
+  line-height: var(--ds-line-height-tight);
+  color: var(--ds-color-text);
+  letter-spacing: -0.025em;
+  max-width: 36rem;
+
+  span {
+    color: var(--ds-color-primary);
+  }
+}
+
+.hero__subtitle {
+  font-size: var(--ds-font-size-lg);
+  color: var(--ds-color-text-muted);
+  max-width: 32rem;
+  line-height: var(--ds-line-height-relaxed);
+}
+
+.hero__actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem 4rem;
+  max-width: 56rem;
+  margin-inline: auto;
+}
+
+.card {
+  padding: 1.5rem;
+  background-color: var(--ds-color-surface);
+  border: 1px solid var(--ds-color-border);
+  border-radius: 0.75rem;
+  transition: box-shadow var(--ds-transition-fast, 150ms ease),
+              border-color var(--ds-transition-fast, 150ms ease);
+
+  &:hover {
+    border-color: var(--ds-color-border-strong);
+    box-shadow: var(--ds-shadow-md);
+  }
+}
+
+.card__icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.card__title {
+  font-size: var(--ds-font-size-base);
+  font-weight: 600;
+  color: var(--ds-color-text);
+  margin-bottom: 0.375rem;
+}
+
+.card__desc {
+  font-size: var(--ds-font-size-sm);
+  color: var(--ds-color-text-muted);
+  line-height: var(--ds-line-height-normal);
+}

@@ -6,7 +6,7 @@ import { RouterLink } from '@angular/router';
   selector: 'lib-button',
   imports: [RouterLink, NgTemplateOutlet],
   templateUrl: './button.html',
-  styleUrl: './button.css',
+  styleUrl: './button.scss',
 })
 export class Button {
   type = input<'button' | 'submit' | 'reset'>('button');

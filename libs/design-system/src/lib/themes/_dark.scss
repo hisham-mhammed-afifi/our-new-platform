@@ -1,0 +1,109 @@
+@use '../abstracts/variables' as *;
+
+[data-theme='dark'] {
+  // Primary
+  --ds-color-primary: #{$color-indigo-500};
+  --ds-color-primary-hover: #{$color-indigo-400};
+  --ds-color-primary-active: #{$color-indigo-600};
+  --ds-color-primary-text: #{$color-white};
+
+  // Secondary
+  --ds-color-secondary: #{$color-gray-700};
+  --ds-color-secondary-hover: #{$color-gray-600};
+  --ds-color-secondary-active: #{$color-gray-500};
+  --ds-color-secondary-text: #{$color-gray-100};
+
+  // Surfaces
+  --ds-color-background: #{$color-gray-950};
+  --ds-color-surface: #{$color-gray-900};
+  --ds-color-surface-hover: #{$color-gray-800};
+  --ds-color-surface-raised: #{$color-gray-800};
+
+  // Text
+  --ds-color-text: #{$color-gray-50};
+  --ds-color-text-secondary: #{$color-gray-300};
+  --ds-color-text-muted: #{$color-gray-400};
+  --ds-color-text-inverse: #{$color-gray-900};
+
+  // Border
+  --ds-color-border: #{$color-gray-700};
+  --ds-color-border-strong: #{$color-gray-600};
+
+  // Focus
+  --ds-color-focus: #{$color-indigo-400};
+
+  // Outline variant
+  --ds-color-outline-bg: transparent;
+  --ds-color-outline-hover: rgba(99, 102, 241, 0.15);
+  --ds-color-outline-active: rgba(99, 102, 241, 0.25);
+  --ds-color-outline-text: #{$color-indigo-400};
+  --ds-color-outline-border: #{$color-indigo-400};
+
+  // Status
+  --ds-color-success: #{$color-green-500};
+  --ds-color-warning: #{$color-amber-500};
+  --ds-color-error: #{$color-red-500};
+
+  // Shadows (stronger for dark backgrounds)
+  --ds-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.2);
+  --ds-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --ds-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
+
+  // Disabled
+  --ds-opacity-disabled: 0.4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    // Primary
+    --ds-color-primary: #{$color-indigo-500};
+    --ds-color-primary-hover: #{$color-indigo-400};
+    --ds-color-primary-active: #{$color-indigo-600};
+    --ds-color-primary-text: #{$color-white};
+
+    // Secondary
+    --ds-color-secondary: #{$color-gray-700};
+    --ds-color-secondary-hover: #{$color-gray-600};
+    --ds-color-secondary-active: #{$color-gray-500};
+    --ds-color-secondary-text: #{$color-gray-100};
+
+    // Surfaces
+    --ds-color-background: #{$color-gray-950};
+    --ds-color-surface: #{$color-gray-900};
+    --ds-color-surface-hover: #{$color-gray-800};
+    --ds-color-surface-raised: #{$color-gray-800};
+
+    // Text
+    --ds-color-text: #{$color-gray-50};
+    --ds-color-text-secondary: #{$color-gray-300};
+    --ds-color-text-muted: #{$color-gray-400};
+    --ds-color-text-inverse: #{$color-gray-900};
+
+    // Border
+    --ds-color-border: #{$color-gray-700};
+    --ds-color-border-strong: #{$color-gray-600};
+
+    // Focus
+    --ds-color-focus: #{$color-indigo-400};
+
+    // Outline variant
+    --ds-color-outline-bg: transparent;
+    --ds-color-outline-hover: rgba(99, 102, 241, 0.15);
+    --ds-color-outline-active: rgba(99, 102, 241, 0.25);
+    --ds-color-outline-text: #{$color-indigo-400};
+    --ds-color-outline-border: #{$color-indigo-400};
+
+    // Status
+    --ds-color-success: #{$color-green-500};
+    --ds-color-warning: #{$color-amber-500};
+    --ds-color-error: #{$color-red-500};
+
+    // Shadows
+    --ds-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.2);
+    --ds-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+    --ds-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
+
+    // Disabled
+    --ds-opacity-disabled: 0.4;
+  }
+}

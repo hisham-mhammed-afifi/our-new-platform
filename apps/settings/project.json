@@ -22,6 +22,9 @@
           }
         ],
         "styles": ["apps/settings/src/styles.scss"],
+        "stylePreprocessorOptions": {
+          "includePaths": ["libs/design-system/src", "libs/design-system/src/lib"]
+        },
         "customWebpackConfig": {
           "path": "apps/settings/webpack.config.ts"
         }

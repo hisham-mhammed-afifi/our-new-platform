@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -r \"Button\\\\|@our/ui\" /d/POCs/our-new-platform/apps --include=*.ts --include=*.tsx)",
+      "Bash(grep -E \"\\\\.\\(ts|html|scss|css\\)$\")",
+      "Bash(find /d/POCs/our-new-platform -type f -name *.spec.ts)"
+    ]
+  }
+}

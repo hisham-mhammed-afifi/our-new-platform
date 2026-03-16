@@ -1,0 +1,24 @@
+// ============================================
+// Design System — 7-1 SASS Architecture
+// ============================================
+
+// 1. Vendors (third-party)
+@use 'vendors';
+
+// 2. Abstracts (no output — variables, functions, mixins)
+// Consumed via @use in individual files, not imported here
+
+// 3. Base (reset, typography, animations)
+@use 'base';
+
+// 4. Layout (grid, containers)
+@use 'layout';
+
+// 5. Components (design-system-level component styles)
+@use 'components';
+
+// 6. Pages (page-specific styles)
+@use 'pages';
+
+// 7. Themes (light/dark CSS custom properties)
+@use 'themes';

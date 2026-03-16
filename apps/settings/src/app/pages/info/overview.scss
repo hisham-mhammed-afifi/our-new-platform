@@ -1,0 +1,112 @@
+:host {
+  display: block;
+}
+
+.overview__intro {
+  margin-bottom: 2rem;
+}
+
+.overview__heading {
+  font-size: var(--ds-font-size-xl);
+  font-weight: 600;
+  color: var(--ds-color-text);
+  margin: 0 0 0.5rem;
+}
+
+.overview__desc {
+  font-size: var(--ds-font-size-sm);
+  color: var(--ds-color-text-muted);
+  line-height: var(--ds-line-height-relaxed);
+  max-width: 40rem;
+  margin: 0;
+}
+
+// Feature cards
+.overview__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.overview__card {
+  padding: 1.25rem;
+  background-color: var(--ds-color-surface);
+  border: 1px solid var(--ds-color-border);
+  border-radius: 0.75rem;
+  transition: box-shadow var(--ds-transition-fast, 150ms ease),
+              border-color var(--ds-transition-fast, 150ms ease);
+
+  &:hover {
+    border-color: var(--ds-color-border-strong);
+    box-shadow: var(--ds-shadow-sm);
+  }
+}
+
+.overview__card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+
+  &--blue {
+    background-color: color-mix(in srgb, var(--ds-color-primary) 12%, transparent);
+    color: var(--ds-color-primary);
+  }
+
+  &--green {
+    background-color: color-mix(in srgb, var(--ds-color-success) 12%, transparent);
+    color: var(--ds-color-success);
+  }
+
+  &--amber {
+    background-color: color-mix(in srgb, var(--ds-color-warning) 12%, transparent);
+    color: var(--ds-color-warning);
+  }
+}
+
+.overview__card-title {
+  font-size: var(--ds-font-size-sm);
+  font-weight: 600;
+  color: var(--ds-color-text);
+  margin: 0 0 0.25rem;
+}
+
+.overview__card-desc {
+  font-size: var(--ds-font-size-sm);
+  color: var(--ds-color-text-muted);
+  line-height: var(--ds-line-height-normal);
+  margin: 0;
+}
+
+// Stats row
+.overview__stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1.25rem;
+  background-color: var(--ds-color-surface);
+  border: 1px solid var(--ds-color-border);
+  border-radius: 0.75rem;
+}
+
+.overview__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.125rem;
+}
+
+.overview__stat-value {
+  font-size: var(--ds-font-size-xl);
+  font-weight: 700;
+  color: var(--ds-color-text);
+}
+
+.overview__stat-label {
+  font-size: var(--ds-font-size-xs);
+  color: var(--ds-color-text-muted);
+}

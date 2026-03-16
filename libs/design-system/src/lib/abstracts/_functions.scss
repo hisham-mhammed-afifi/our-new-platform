@@ -1,0 +1,13 @@
+// ============================================
+// Helper Functions
+// ============================================
+
+/// Convert px to rem
+@function rem($px, $base: 16) {
+  @return calc($px / $base) * 1rem;
+}
+
+/// Convert px to em
+@function em($px, $base: 16) {
+  @return calc($px / $base) * 1em;
+}

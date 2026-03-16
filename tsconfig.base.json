@@ -20,7 +20,10 @@
         "apps/playground/src/app/remote-entry/entry.routes.ts"
       ],
       "auth/Routes": ["apps/auth/src/app/remote-entry/entry.routes.ts"],
-      "@our/ui": ["libs/ui/src/index.ts"]
+      "@our/ui": ["libs/ui/src/index.ts"],
+      "@our/design-system": ["libs/design-system/src/index.scss"],
+      "@our/design-system/abstracts": ["libs/design-system/src/lib/abstracts/_index.scss"],
+      "@our/testing": ["libs/testing/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

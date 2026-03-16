@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as *;
+
+:root {
+  --ds-container-max-width: #{$breakpoint-xl};
+  --ds-container-padding: #{$spacing-4};
+}
+
+.ds-container {
+  width: 100%;
+  max-width: var(--ds-container-max-width);
+  margin-inline: auto;
+  padding-inline: var(--ds-container-padding);
+}

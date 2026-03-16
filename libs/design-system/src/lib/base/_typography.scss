@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as *;
+
+:root {
+  --ds-font-family: #{$font-family-sans};
+  --ds-font-family-mono: #{$font-family-mono};
+
+  --ds-font-size-xs: #{$font-size-xs};
+  --ds-font-size-sm: #{$font-size-sm};
+  --ds-font-size-base: #{$font-size-base};
+  --ds-font-size-lg: #{$font-size-lg};
+  --ds-font-size-xl: #{$font-size-xl};
+  --ds-font-size-2xl: #{$font-size-2xl};
+  --ds-font-size-3xl: #{$font-size-3xl};
+  --ds-font-size-4xl: #{$font-size-4xl};
+
+  --ds-line-height-tight: #{$line-height-tight};
+  --ds-line-height-normal: #{$line-height-normal};
+  --ds-line-height-relaxed: #{$line-height-relaxed};
+}
