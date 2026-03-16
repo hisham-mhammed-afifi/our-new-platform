@@ -1,4 +1,5 @@
-button {
+button,
+a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -12,60 +13,63 @@ button {
   cursor: pointer;
   transition: background-color 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
   font-family: inherit;
+  text-decoration: none;
 }
 
-button:focus-visible {
+button:focus-visible,
+a:focus-visible {
   outline: 2px solid #6366f1;
   outline-offset: 2px;
 }
 
-button:disabled {
+button:disabled,
+a.disabled {
   opacity: 0.5;
   cursor: not-allowed;
   pointer-events: none;
 }
 
 /* Primary */
-button.primary {
+:is(button, a).primary {
   background-color: #4f46e5;
   color: #fff;
   border-color: #4f46e5;
 }
 
-button.primary:hover {
+:is(button, a).primary:hover {
   background-color: #4338ca;
 }
 
-button.primary:active {
+:is(button, a).primary:active {
   background-color: #3730a3;
 }
 
 /* Secondary */
-button.secondary {
+:is(button, a).secondary {
   background-color: #e5e7eb;
   color: #1f2937;
   border-color: #e5e7eb;
 }
 
-button.secondary:hover {
+:is(button, a).secondary:hover {
   background-color: #d1d5db;
 }
 
-button.secondary:active {
+:is(button, a).secondary:active {
   background-color: #bfc5cd;
 }
 
 /* Outline */
-button.outline {
+:is(button, a).outline {
   background-color: transparent;
   color: #4f46e5;
   border-color: #4f46e5;
 }
 
-button.outline:hover {
+:is(button, a).outline:hover {
   background-color: #eef2ff;
 }
 
-button.outline:active {
+:is(button, a).outline:active {
   background-color: #e0e7ff;
 }

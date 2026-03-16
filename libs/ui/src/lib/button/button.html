@@ -1,7 +1,24 @@
-@let btnType = type();
 @let btnDisabled = disabled();
 @let btnVariant = variant();
+@let btnHref = href();
+@let btnRouterLink = routerLink();
+@let btnTarget = target();
 
-<button [type]="btnType" [disabled]="btnDisabled" [class]="btnVariant">
+<ng-template #content>
   <ng-content />
-</button>
+</ng-template>
+
+@if (btnRouterLink !== '') {
+  <a [routerLink]="btnRouterLink" [class]="btnVariant" [attr.target]="btnTarget" [class.disabled]="btnDisabled">
+    <ng-container *ngTemplateOutlet="content" />
+  </a>
+} @else if (btnHref !== '') {
+  <a [href]="btnHref" [class]="btnVariant" [attr.target]="btnTarget" [class.disabled]="btnDisabled">
+    <ng-container *ngTemplateOutlet="content" />
+  </a>
+} @else {
+  @let btnType = type();
+  <button [type]="btnType" [disabled]="btnDisabled" [class]="btnVariant">
+    <ng-container *ngTemplateOutlet="content" />
+  </button>
+}
