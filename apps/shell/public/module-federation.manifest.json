@@ -1,0 +1,5 @@
+{
+  "settings": "http://localhost:4201/mf-manifest.json",
+  "playground": "http://localhost:4202/mf-manifest.json",
+  "auth": "http://localhost:4203/mf-manifest.json"
+}

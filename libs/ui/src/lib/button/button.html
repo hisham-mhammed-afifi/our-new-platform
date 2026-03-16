@@ -1,0 +1,7 @@
+@let btnType = type();
+@let btnDisabled = disabled();
+@let btnVariant = variant();
+
+<button [type]="btnType" [disabled]="btnDisabled" [class]="btnVariant">
+  <ng-content />
+</button>
